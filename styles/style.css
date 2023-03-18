@@ -19,6 +19,7 @@
 html,
 body {
 	height: 100%;
+	background-color: var(--white);
 }
 
 body {
@@ -58,3 +59,38 @@ h6 {
 }
 
 /*--------------------------------------------------------------Header------------------------------------------------------------------------*/
+
+header {
+	width: 100%;
+	height: fit-content;
+	background-color: var(--black);
+}
+
+header > nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 1rem;
+}
+
+header > nav > ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 1.3rem;
+}
+
+header > nav > ul > li > a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+	text-shadow: 0 0 0 var(--white);
+	transition: all 0.4s ease-in-out;
+}
+
+header > nav > ul > li > a > img {
+	height: 40px;
+	min-width: 40px;
+}
