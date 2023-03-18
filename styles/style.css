@@ -1,6 +1,8 @@
 :root {
 	--black: #0c0c0c;
 	--white: #fefefe;
+	--grey: #d9d9da;
+	--red: #cc0000;
 }
 
 /*-------------------------------------------------------------CSS Reset----------------------------------------------------------------------*/
@@ -30,6 +32,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: var(--black);
 }
 
 img,
@@ -67,6 +70,7 @@ h6 {
 
 header {
 	width: 100%;
+	margin-bottom: 1rem;
 }
 
 /*---nav---*/
@@ -123,8 +127,34 @@ header > nav > ul > li > a > img {
 
 main {
 	height: 100%;
-	background-color: yellow;
 	width: 60%;
 	display: flex;
 	flex-direction: column;
+}
+
+/*---trending section---*/
+main > .trending {
+	display: flex;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+}
+
+main > .trending > a {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 0.95rem;
+	padding: 0 0.55rem 0 0.55rem;
+	border-right: 0.15rem solid var(--grey);
+	line-height: 0.9rem;
+	font-weight: 600;
+	flex: 0 0 auto;
+}
+
+main > .trending > a:hover {
+	color: var(--red);
+}
+
+main > .trending > a > strong {
+	color: var(--red);
+	transition: all 0.4s ease-out;
 }
