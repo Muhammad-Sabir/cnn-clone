@@ -94,11 +94,11 @@ header > nav > ul {
 }
 
 header > nav > .left-ul {
-	margin-right: 10rem;
+	margin-right: 12rem;
 }
 
 header > nav > .right-ul {
-	margin-left: 10rem;
+	margin-left: 12rem;
 }
 
 header > nav > ul > li > a {
