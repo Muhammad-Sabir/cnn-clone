@@ -33,6 +33,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	color: var(--black);
+	font-family: "CNN", "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
 }
 
 img,
@@ -292,3 +293,5 @@ main {
 .row-1 > .col-3 > a:not(:nth-of-type(1), :nth-of-type(2)) {
 	border-top: 0.005rem solid var(--grey);
 }
+
+/*---news-row-2 section---*/
