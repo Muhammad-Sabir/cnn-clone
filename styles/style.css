@@ -160,11 +160,11 @@ main {
 
 .trending-row > a:hover {
 	color: var(--red);
+	transition: all 0.2s ease-out;
 }
 
 .trending-row > a > strong {
 	color: var(--red);
-	transition: all 0.4s ease-out;
 }
 
 /*---news-row-1 section---*/
@@ -183,6 +183,7 @@ main {
 
 .row-1 a:hover {
 	color: var(--red);
+	transition: all 0.2s ease-out;
 }
 
 .row-1 h3 {
@@ -262,6 +263,11 @@ main {
 .row-1 > .col-2 li a {
 	text-decoration: underline var(--grey);
 	text-underline-offset: 0.2rem;
+}
+
+.row-1 > .col-2 li a:hover {
+	text-decoration: none;
+	transition: all 0.2s ease-out;
 }
 
 .row-1 > .col-2 > .news-1 {
