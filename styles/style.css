@@ -33,7 +33,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	color: var(--black);
-	font-family: "CNN", "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img,
@@ -71,7 +71,7 @@ h6 {
 
 header {
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	position: sticky;
 	top: 0;
 	z-index: 99999;
@@ -141,7 +141,7 @@ main {
 
 .trending-row {
 	display: flex;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	justify-content: space-between;
 }
 
@@ -151,10 +151,10 @@ main {
 }
 
 .trending-row > a {
-	font-size: 0.95rem;
-	padding: 0 0.55rem 0 0.55rem;
+	font-size: 0.82rem;
+	padding: 0rem 0.55rem;
 	border-right: 0.15rem solid var(--grey);
-	line-height: 0.9rem;
+	line-height: 0.9;
 	font-weight: 600;
 	flex: 0 0 auto;
 }
@@ -238,11 +238,11 @@ main {
 .row-1 > .col-1 > a:nth-of-type(2) > .live-update {
 	color: var(--white);
 	background-color: var(--red);
-	padding: 0.8rem;
+	padding: 0.6rem;
 	position: absolute;
 	bottom: 0;
 	font-weight: 600;
-	font-size: 0.97rem;
+	font-size: 0.8rem;
 }
 
 .row-1 > .col-1 > a:nth-of-type(3) {
