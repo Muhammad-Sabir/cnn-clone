@@ -3,6 +3,7 @@
 	--white: #fefefe;
 	--grey: #d9d9da;
 	--red: #cc0000;
+	--light-grey: #f2f2f2;
 }
 
 /*-------------------------------------------------------------CSS Reset----------------------------------------------------------------------*/
@@ -67,6 +68,17 @@ h6 {
 	isolation: isolate;
 }
 
+a {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 1rem;
+}
+
+a:hover {
+	color: var(--red);
+	transition: all 0.2s ease-out;
+}
+
 /*--------------------------------------------------------------header------------------------------------------------------------------------*/
 
 header {
@@ -106,7 +118,6 @@ header > nav > .left-ul {
 
 header > nav > ul > li > a {
 	color: var(--white);
-	text-decoration: none;
 }
 
 header > nav > ul > li > a:hover {
@@ -142,17 +153,6 @@ main {
 
 .normal-row-1 {
 	width: 100%;
-}
-
-.normal-row-1 a {
-	text-decoration: none;
-	color: var(--black);
-	font-size: 1rem;
-}
-
-.normal-row-1 a:hover {
-	color: var(--red);
-	transition: all 0.2s ease-out;
 }
 
 .normal-row-1 h3 {
@@ -220,9 +220,95 @@ main {
 	text-underline-offset: 0.2rem;
 }
 
-.normal-row-1 > .col-2 li a:hover {
-	text-decoration: none;
-	transition: all 0.2s ease-out;
+.normal-row-1 > .col-2 > .news-1 {
+	margin-bottom: 1.1rem;
+}
+
+/*col-3*/
+
+.normal-row-1 > .col-3 > a:not(:nth-of-type(1), :nth-of-type(2)) {
+	padding: 0.4375rem 0;
+}
+
+.normal-row-1 > .col-3 > a:not(:nth-of-type(1), :nth-of-type(2)) {
+	border-top: 0.005rem solid var(--grey);
+}
+
+/*---normal-row-2 section---*/
+.normal-row-2 {
+	width: 100%;
+}
+
+.normal-row-2 h2 {
+	font-size: 1.15rem;
+	padding: 0.4375rem;
+	background-color: var(--light-grey);
+}
+
+.normal-row-2 h3 {
+	font-size: 1.28rem;
+	padding: 0.4375rem 0;
+	font-weight: 900;
+}
+
+.normal-row-2 ul li {
+	list-style-position: inside;
+	font-size: 0.7rem;
+}
+
+.normal-row-2 img {
+	height: 259px;
+}
+
+.news-col {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+/*col-1*/
+
+.normal-row-2 > .col-1 {
+	padding: 0.4375rem 0;
+}
+
+.normal-row-1 > .col-1 > a:nth-of-type(1) > h1 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2.25rem;
+	margin: 0.4rem;
+}
+
+.normal-row-1
+	> .col-1
+	> a:not(:nth-of-type(1), :nth-of-type(2), :nth-of-type(3)) {
+	border-top: 0.005rem solid var(--grey);
+}
+
+.normal-row-1 > .col-1 > a:nth-of-type(2) {
+	position: relative;
+}
+
+.normal-row-1 > .col-1 > a:nth-of-type(2) > .live-update {
+	color: var(--white);
+	background-color: var(--red);
+	padding: 0.6rem;
+	position: absolute;
+	bottom: 0;
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+
+.normal-row-1 > .col-1 > a:nth-of-type(3) {
+	font-weight: 700;
+	font-size: 1.15rem;
+}
+
+/*col-2*/
+
+.normal-row-1 > .col-2 li a {
+	text-decoration: underline var(--grey);
+	text-underline-offset: 0.2rem;
 }
 
 .normal-row-1 > .col-2 > .news-1 {
@@ -276,32 +362,10 @@ main {
 		margin-left: 12rem;
 	}
 
-	header > nav > ul > li > a {
-		color: var(--white);
-		text-decoration: none;
-	}
-
-	header > nav > ul > li > a:hover {
-		text-shadow: 0 0 0 var(--white);
-		transition: all 0.4s ease-in-out;
-	}
-
-	header > nav > ul > li > .login-btn {
-		border: 0.01rem solid;
-		padding: 0.32rem 0.4rem;
-		border-radius: 0.5rem;
-		font-weight: 700;
-	}
-
-	header > nav > ul > li > a > img {
-		height: 40px;
-		min-width: 40px;
-	}
-
 	/*--------------------------------------------------------------main-------------------------------------------------------------------*/
 
 	main {
-		width: 60%;
+		max-width: 60%;
 	}
 
 	/*---trending section---*/
@@ -309,8 +373,7 @@ main {
 	.trending {
 		display: flex;
 		margin-bottom: 2rem;
-		justify-content: space-between;
-		overflow: hidden;
+		justify-content: center;
 	}
 
 	.trending a {
@@ -327,11 +390,6 @@ main {
 		flex: 0 0 auto;
 	}
 
-	.trending > a:hover {
-		color: var(--red);
-		transition: all 0.2s ease-out;
-	}
-
 	.trending > a > strong {
 		color: var(--red);
 	}
@@ -340,8 +398,9 @@ main {
 
 	.normal-row-1 {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
 	/*col-1*/
