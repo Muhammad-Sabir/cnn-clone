@@ -466,7 +466,6 @@ footer {
 
 .missed-news h1::after {
 	content: "";
-	/*width: 75%;*/
 	width: 40%;
 	height: 9px;
 	display: block;
@@ -481,7 +480,6 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1.23rem;
-	/*max-width: 60%;*/
 	width: 90%;
 }
 
@@ -498,17 +496,7 @@ footer {
 	flex: 1 1 765px;
 }
 
-/*.missed-news .row .main-col a {
-	position: relative;
-}*/
-
 .missed-news .row .main-col p {
-	/*position: absolute;
-	bottom: 0;
-	background-color: rgba(38, 38, 38, 0.85);
-	width: 100%;
-	padding: 2rem;
-	font-size: 1.7rem;*/
 	font-size: 1.3rem;
 	padding-top: 1rem;
 	font-weight: 700;
@@ -533,6 +521,61 @@ footer {
 .missed-news .row a:hover {
 	color: var(--red);
 	transition: all 0.2s ease-in-out;
+}
+
+/*---topics section---*/
+
+.topics {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.topics a {
+	color: var(--white);
+	font-size: 0.97rem;
+}
+
+.topics a:hover {
+	text-decoration: underline;
+	transition: all 0.3s ease-in;
+}
+
+.topics h3 {
+	padding: 1rem 0;
+	font-size: 0.99rem;
+}
+
+.topics > div {
+	padding: 1rem 0;
+	max-width: 75%;
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.topics input {
+	width: 100%;
+	background-color: var(--white);
+	border: none;
+	padding: 0.5rem 0.6rem;
+	border-radius: 0.16rem;
+	outline: none;
+	color: var(--black);
+	font-size: 1rem;
+}
+
+input[type="search"]::placeholder {
+	color: var(--light-black);
+	font-size: 0.9rem;
+}
+
+.topics .news-topics {
+	display: flex;
+	flex-direction: column;
+	min-width: 151.6px;
 }
 
 /*-------------------------------------------------------------media-queries------------------------------------------------------------------*/
